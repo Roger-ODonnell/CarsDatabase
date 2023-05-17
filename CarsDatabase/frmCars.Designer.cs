@@ -39,7 +39,7 @@
             this.txtVehicleReg = new System.Windows.Forms.TextBox();
             this.CarsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hireDataSet1 = new CarsDatabase.HireDataSet();
-            this.txtEngineSize = new System.Windows.Forms.TextBox();
+            this.txtEngineSizeAlen = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -150,14 +150,14 @@
             this.hireDataSet1.DataSetName = "HireDataSet";
             this.hireDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // txtEngineSize
+            // txtEngineSizeAlen
             // 
-            this.txtEngineSize.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.CarsBindingSource, "EngineSize", true));
-            this.txtEngineSize.Location = new System.Drawing.Point(173, 192);
-            this.txtEngineSize.Name = "txtEngineSize";
-            this.txtEngineSize.Size = new System.Drawing.Size(135, 20);
-            this.txtEngineSize.TabIndex = 9;
-            this.engineSize.SetToolTip(this.txtEngineSize, "Enter engine size");
+            this.txtEngineSizeAlen.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.CarsBindingSource, "EngineSize", true));
+            this.txtEngineSizeAlen.Location = new System.Drawing.Point(173, 192);
+            this.txtEngineSizeAlen.Name = "txtEngineSizeAlen";
+            this.txtEngineSizeAlen.Size = new System.Drawing.Size(135, 20);
+            this.txtEngineSizeAlen.TabIndex = 9;
+            this.engineSize.SetToolTip(this.txtEngineSizeAlen, "Enter engine size");
             // 
             // btnUpdate
             // 
@@ -352,8 +352,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(574, 445);
+            this.ClientSize = new System.Drawing.Size(620, 482);
             this.Controls.Add(this.ckbAvailable);
             this.Controls.Add(this.rentPerDay);
             this.Controls.Add(this.dtDateRegistered);
@@ -369,7 +370,7 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.txtEngineSize);
+            this.Controls.Add(this.txtEngineSizeAlen);
             this.Controls.Add(this.txtVehicleReg);
             this.Controls.Add(this.lblAvailable);
             this.Controls.Add(this.lblRentalPerDay);
@@ -379,6 +380,7 @@
             this.Controls.Add(this.lblVehicleReg);
             this.Controls.Add(this.label1);
             this.Name = "frmCars";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TaskA Roger O\'Donnell  17/05/2023";
             this.Load += new System.EventHandler(this.frmCars_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CarsBindingSource)).EndInit();
@@ -398,7 +400,7 @@
         private System.Windows.Forms.Label lblRentalPerDay;
         private System.Windows.Forms.Label lblAvailable;
         private System.Windows.Forms.TextBox txtVehicleReg;
-        private System.Windows.Forms.TextBox txtEngineSize;
+        private System.Windows.Forms.TextBox txtEngineSizeAlen;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnDelete;
