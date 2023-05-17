@@ -2,7 +2,7 @@
 
 Winform application to hire and store cars in a database: C# & SQLite used for code base<br>
 <br>
- -Features:
+ <strong>FEATURES:</strong>
  <br>
   -Add a Car
   <br>
