@@ -8,7 +8,7 @@ namespace CarsDatabase
     {
         string connectionString = "Data Source=C:\\data\\hire.db;Version=3;";
 
-        private frmCars parentForm; // Reference to frmCars
+        private frmCars parentForm; 
 
         public frmAdd(frmCars parentForm)
         {
@@ -32,10 +32,8 @@ namespace CarsDatabase
             string make = makeInput.Text;
             string engineSize = engineSizeInput.Text;
             string rentalPerDay = rentPerDay.Value.ToString();
-            string dateCarRegistered = dateRegistered.Value.ToString(); // Convert to string
+            string dateCarRegistered = dateRegistered.Value.ToString(); 
             bool available = availableCheckMark.Checked;
-
-            // Perform data validation here if needed
 
             using (SQLiteConnection connection = new SQLiteConnection(connectionString))
             {
@@ -49,7 +47,7 @@ namespace CarsDatabase
                     command.Parameters.AddWithValue("@Make", make);
                     command.Parameters.AddWithValue("@EngineSize", engineSize);
                     command.Parameters.AddWithValue("@DateRegistered", dateCarRegistered);
-                    command.Parameters.AddWithValue("@RentalPerDay", rentalPerDay); // Use string value
+                    command.Parameters.AddWithValue("@RentalPerDay", rentalPerDay);
                     command.Parameters.AddWithValue("@Available", available);
 
                     command.ExecuteNonQuery();

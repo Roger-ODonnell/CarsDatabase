@@ -39,7 +39,7 @@
             this.txtVehicleReg = new System.Windows.Forms.TextBox();
             this.CarsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hireDataSet1 = new CarsDatabase.HireDataSet();
-            this.txtEngineSizeAlen = new System.Windows.Forms.TextBox();
+            this.txtEngineSize = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -138,7 +138,7 @@
             this.txtVehicleReg.Name = "txtVehicleReg";
             this.txtVehicleReg.Size = new System.Drawing.Size(135, 20);
             this.txtVehicleReg.TabIndex = 7;
-            this.vehicleReg.SetToolTip(this.txtVehicleReg, "Enter vehicle registration number");
+            this.vehicleReg.SetToolTip(this.txtVehicleReg, "Add the vehicles registration");
             // 
             // CarsBindingSource
             // 
@@ -150,14 +150,14 @@
             this.hireDataSet1.DataSetName = "HireDataSet";
             this.hireDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // txtEngineSizeAlen
+            // txtEngineSize
             // 
-            this.txtEngineSizeAlen.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.CarsBindingSource, "EngineSize", true));
-            this.txtEngineSizeAlen.Location = new System.Drawing.Point(173, 192);
-            this.txtEngineSizeAlen.Name = "txtEngineSizeAlen";
-            this.txtEngineSizeAlen.Size = new System.Drawing.Size(135, 20);
-            this.txtEngineSizeAlen.TabIndex = 9;
-            this.engineSize.SetToolTip(this.txtEngineSizeAlen, "Enter engine size");
+            this.txtEngineSize.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.CarsBindingSource, "EngineSize", true));
+            this.txtEngineSize.Location = new System.Drawing.Point(173, 192);
+            this.txtEngineSize.Name = "txtEngineSize";
+            this.txtEngineSize.Size = new System.Drawing.Size(135, 20);
+            this.txtEngineSize.TabIndex = 9;
+            this.engineSize.SetToolTip(this.txtEngineSize, "Enter an engine size");
             // 
             // btnUpdate
             // 
@@ -168,7 +168,7 @@
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(83, 39);
             this.btnUpdate.TabIndex = 13;
-            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Text = "&Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.updateButton_Click);
             // 
@@ -181,7 +181,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(83, 37);
             this.btnAdd.TabIndex = 14;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "&Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.addButton_Click);
             // 
@@ -194,7 +194,7 @@
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(83, 38);
             this.btnDelete.TabIndex = 15;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "&Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.deleteButton_Click);
             // 
@@ -207,7 +207,7 @@
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(83, 36);
             this.btnSearch.TabIndex = 16;
-            this.btnSearch.Text = "Search";
+            this.btnSearch.Text = "&Search";
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.searchButton_Click);
             // 
@@ -220,7 +220,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(83, 40);
             this.btnCancel.TabIndex = 17;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.cancelButton_Click);
             // 
@@ -233,7 +233,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(83, 36);
             this.btnExit.TabIndex = 18;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "&Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.exitButton_Click);
             // 
@@ -306,7 +306,7 @@
             this.txtMake.Name = "txtMake";
             this.txtMake.Size = new System.Drawing.Size(182, 20);
             this.txtMake.TabIndex = 24;
-            this.make.SetToolTip(this.txtMake, "Enter the make of the vehicle");
+            this.make.SetToolTip(this.txtMake, "Add the vehicles make");
             // 
             // rentPerDay
             // 
@@ -335,7 +335,7 @@
             this.ckbAvailable.Name = "ckbAvailable";
             this.ckbAvailable.Size = new System.Drawing.Size(12, 11);
             this.ckbAvailable.TabIndex = 29;
-            this.availableCar.SetToolTip(this.ckbAvailable, "Is car available?");
+            this.availableCar.SetToolTip(this.ckbAvailable, "Set cars availability");
             this.ckbAvailable.UseVisualStyleBackColor = true;
             // 
             // tblCarTableAdapter1
@@ -354,7 +354,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(620, 482);
+            this.ClientSize = new System.Drawing.Size(559, 482);
             this.Controls.Add(this.ckbAvailable);
             this.Controls.Add(this.rentPerDay);
             this.Controls.Add(this.dtDateRegistered);
@@ -370,7 +370,7 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.txtEngineSizeAlen);
+            this.Controls.Add(this.txtEngineSize);
             this.Controls.Add(this.txtVehicleReg);
             this.Controls.Add(this.lblAvailable);
             this.Controls.Add(this.lblRentalPerDay);
@@ -400,7 +400,7 @@
         private System.Windows.Forms.Label lblRentalPerDay;
         private System.Windows.Forms.Label lblAvailable;
         private System.Windows.Forms.TextBox txtVehicleReg;
-        private System.Windows.Forms.TextBox txtEngineSizeAlen;
+        private System.Windows.Forms.TextBox txtEngineSize;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnDelete;
