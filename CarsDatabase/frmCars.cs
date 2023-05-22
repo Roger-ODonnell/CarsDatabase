@@ -48,6 +48,9 @@ namespace CarsDatabase
 
             rentPerDay.DataBindings.Clear();
             rentPerDay.DataBindings.Add("Text", hireDataSet1.tblCar, "RentalPerDay");
+
+            dtDateRegistered.DataBindings.Clear();
+            dtDateRegistered.DataBindings.Add("Value", hireDataSet1.tblCar, "DateRegistered");
         }
 
 
@@ -86,6 +89,8 @@ namespace CarsDatabase
             DataRowView currentRow = (DataRowView)CarsBindingSource.Current;
             txtMake.Text = currentRow["Make"].ToString();
             rentPerDay.Text = currentRow["RentalPerDay"].ToString();
+            dtDateRegistered.Text = currentRow["DateRegistered"].ToString();
+            currentRow["DateRegistered"] = dtDateRegistered.Value;
         }
 
         private void NextButton_Click(object sender, EventArgs e)
