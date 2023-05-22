@@ -6,7 +6,7 @@ namespace CarsDatabase
 {
     public partial class frmAdd : Form
     {
-        string connectionString = "Data Source=C:\\data\\hire.db;Version=3;";
+        string connectionString = "Data Source=C:\\data\\hire.db;";
 
         private frmCars parentForm; 
 

@@ -7,7 +7,7 @@ namespace CarsDatabase
 {
     public partial class frmSearch : Form
     {
-        string connectionString = "Data Source=C:\\data\\hire.db;Version=3;";
+        string connectionString = "Data Source=C:\\data\\hire.db;";
 
         public frmSearch()
         {
@@ -32,7 +32,7 @@ namespace CarsDatabase
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void btnRun_Click(object sender, EventArgs e)

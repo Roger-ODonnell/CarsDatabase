@@ -7,7 +7,7 @@ namespace CarsDatabase
 {
     public partial class frmCars : Form
     {
-        string connectionString = "Data Source=C:\\data\\hire.db;Version=3;";
+        string connectionString = "Data Source=C:\\data\\hire.db;";
 
         public void ReloadData()
         {
@@ -128,7 +128,7 @@ namespace CarsDatabase
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void searchButton_Click(object sender, EventArgs e)
